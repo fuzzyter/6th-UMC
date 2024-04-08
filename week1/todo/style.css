@@ -1,0 +1,37 @@
+html{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding: 5% 25%;
+    background-color: rgb(217, 239, 245);
+}
+#window{
+    width: 50%;
+    left: 40%;
+    padding-top: 2vh;
+    align-items: center;
+    text-align: center;
+}
+h2{
+    font-size: 20pt;
+    align-items: center;
+}
+hr{
+    background-color:gray;
+    height:1px;
+    border:0;
+    width: 70%;
+}
+input{
+    width: 50%;
+    height: 20%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: white;
+    border-radius: 0.2vh;
+    border-color: rgb(231, 239, 246);
+}

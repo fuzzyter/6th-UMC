@@ -1,0 +1,61 @@
+html{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding: 5% 25%;
+    background-color: rgb(183, 212, 220);
+}
+#window{
+    width: 50%;
+    left: 40%;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    background-color: rgb(231, 239, 246);
+    border-radius: 1vh;
+    align-items: center;
+    text-align: center;
+}
+h2{
+    font-size: 20pt;
+    align-items: center;
+}
+hr{
+    background-color:white;
+    height:1px;
+    border:0;
+    width: 50%;
+}
+#nameP,
+#emailP,
+#ageP,
+#passwordP,
+#pwcheckP{
+    font-size: 10pt;
+    color: black;
+}
+input{
+    background-color: rgb(231, 239, 246);
+    border-radius: 1vh;
+    border-color: white;
+}
+#nameError,
+#emailError,
+#ageError,
+#passwordError,
+#pwcheckError{
+    font-size: 8pt;
+    color: red;
+}
+#signupBT{
+    width: 15%;
+    height: 10%;
+    margin-top: 3vh;
+    border-radius: 0.5vh;
+    border-color: white;
+    background-color: gray;
+    color: white;
+}
