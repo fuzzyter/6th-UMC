@@ -4,6 +4,7 @@ import GlobalStyle from './styles/GlobalStyle';
 
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
+import Spinner from './components/spinner';
 
 import MainPage from './pages/main';
 import PopularPage from './pages/PopularPage';
