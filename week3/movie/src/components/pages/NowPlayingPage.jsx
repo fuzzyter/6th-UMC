@@ -1,5 +1,5 @@
-import { Container, MovieCard, Image, Info, Title, Rating } from '../components/style/styles';
-import useMovies from '../components/api/useMovies';
+import { Container, MovieCard, Image, Info, Title, Rating } from '../../style/styles';
+import useMovies from '../api/useMovies';
 import { BeatLoader } from 'react-spinners';
 
 const NowPlayingPage = () => {
