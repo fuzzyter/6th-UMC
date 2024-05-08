@@ -1,65 +1,47 @@
-import React from "react";
-import styled from "styled-components";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
-const NavContainer = styled.div`
-    width: 100%;
-    height: 4vw;
-    background-color: #040E40;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
+const NavbarContainer = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c2f33;
+  padding: 10px 20px;
+`;
 
-const NavContainer2 = styled.div`
-    width: 93%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-`
+const Logo = styled.h1`
+  color: white;
+  font-size: 24px;
+`;
 
-const NavPContainer = styled.div`
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-`
-
-const NavP = styled(NavLink)`
-    font-size: 1vw;
-    font-weight: bold;
+const NavItems = styled.div`
+  a {
     color: white;
-    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
 
     &:hover {
-        color: #FFCC15;
-        font-size: 1.1vw;
+      background-color: #4f545c;
+      border-radius: 4px;
+      font-size: 17px;
     }
-`
+  }
+`;
 
-const NavP2 = styled(NavP)`
-    &.active {
-        color: #FFCC15;
-    }
-`
-
-const Navbar = () => {
-    const location = useLocation();
-
-    return (
-        <NavContainer>
-            <NavContainer2>
-                <NavP to="/">UMC Movie</NavP>
-                <NavPContainer>
-                    <NavP2 to="/signup">회원가입</NavP2>
-                    <NavP2 to="/popular">Popular</NavP2>
-                    <NavP2 to="/now">Now Playing</NavP2>
-                    <NavP2 to="/top">Top Rated</NavP2>
-                    <NavP2 to="/up">Upcoming</NavP2>
-                </NavPContainer>
-            </NavContainer2>
-        </NavContainer>
-    )
+function Navbar() {
+  return (
+    <NavbarContainer>
+      <Logo><NavLink to="/" style={{ color: 'white' }}>UMC Movie</NavLink></Logo>
+      <NavItems>
+        <NavLink to="/popular" style={({ isActive }) => isActive ? { color: 'yellow' } : null}>Popular</NavLink>
+        <NavLink to="/nowplaying" style={({ isActive }) => isActive ? { color: 'yellow' } : null}>Now Playing</NavLink>
+        <NavLink to="/toprated" style={({ isActive }) => isActive ? { color: 'yellow' } : null}>Top Rated</NavLink>
+        <NavLink to="/upcoming" style={({ isActive }) => isActive ? { color: 'yellow' } : null}>Up Coming</NavLink>
+      </NavItems>
+    </NavbarContainer>
+  );
 }
 
 export default Navbar;
