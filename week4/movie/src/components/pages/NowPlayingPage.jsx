@@ -26,6 +26,6 @@ const NowPlayingPage = () => {
       ))}
     </Container>
   );
-};
+}
 
 export default NowPlayingPage;

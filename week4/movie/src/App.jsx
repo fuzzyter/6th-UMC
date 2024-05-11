@@ -9,11 +9,10 @@ import MainPage from './components/pages/MainPage';
 import PopularPage from './components/pages/PopularPage';
 import NowPlayingPage from './components/pages/NowPlayingPage';
 import TopRatedPage from './components/pages/TopRatedPage';
-import UpComing from './components/pages/NotFoundPagePage';
-import UpComing from './components/pages/MovieDetailPage';
-import './App.css';
-import UpComingPage from '../../../week3/movie/src/components/pages/UpComingPage';
+import UpComingPage from './components/pages/UpComingPage';
 import NotFoundPage from './components/pages/NotFoundPage';
+import MovieDetailPage from './components/pages/MovieDetailPage';
+import './App.css';
 
 
 function App() {
