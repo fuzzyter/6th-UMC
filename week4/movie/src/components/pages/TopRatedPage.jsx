@@ -1,4 +1,3 @@
-
 import { Container, MovieCard, Image, Info, Title, Rating } from '../../style/styles';
 import useMovies from '../api/useMovies';
 import { BeatLoader } from 'react-spinners';
