@@ -12,6 +12,9 @@ import TopRatedPage from './components/pages/TopRatedPage';
 import UpComingPage from './components/pages/UpComingPage';
 import NotFoundPage from './components/pages/NotFoundPage';
 import MovieDetailPage from './components/pages/MovieDetailPage';
+import useMovies from './components/api/useMovies'; 
+import SignUpPage from './components/pages/SignUpPage';
+import LogInPage from './components/pages/LogInPage'
 import './App.css';
 
 
@@ -30,6 +33,8 @@ function App() {
           <Route path="/upcoming" element={<UpComingPage/>} />
           <Route path="/movie/:movieTitle" element={<MovieDetailPage movies={movies} />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/login" element={<LogInPage />} />
         </Routes>
         <Footer/>
       </Router>
