@@ -10,7 +10,7 @@ import PopularPage from './components/pages/PopularPage';
 import NowPlayingPage from './components/pages/NowPlayingPage';
 import TopRatedPage from './components/pages/TopRatedPage';
 import UpComing from './components/pages/UpComingPage';
-
+import './App.css';
 
 function App() {
   return (
