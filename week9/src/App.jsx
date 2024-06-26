@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Sidebar from './components/Sidebar.jsx';
 import PopularPage from './pages/PopularPage';
 import MainPage from './pages/MainPage';
 import NowPlayingPage from './pages/NowPlayingPage';
@@ -17,6 +18,7 @@ function App() {
     <Router>
       <div className="app-container">
         <Navbar />
+        <Sidebar />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/popular" element={<PopularPage />} />

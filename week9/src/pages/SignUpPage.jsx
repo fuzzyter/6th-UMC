@@ -19,6 +19,14 @@ const Form = styled.form`
   width: 600px;
   padding: 20px;
   border-radius: 10px;
+
+  @media screen and (max-width: 600px) {
+    width: 60vw;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    width: 60vw;
+  }
 `;
 
 const Input = styled.input`
@@ -29,6 +37,21 @@ const Input = styled.input`
   border: none;
   outline: none;
   font-size: 16px;
+
+  @media screen and (max-width: 600px) {
+    width: 65vw;
+    padding: 1.5vh;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    width: 60vw;
+    padding: 2vh;
+  }
+
+  @media screen and (min-width: 1101px) {
+    width: 45vw;
+    padding: 1.5vh;
+  }
 `;
 
 const ErrorMessage = styled.div`
@@ -60,6 +83,21 @@ const Title = styled.div`
   font-weight: 700;
   font-size: 25px;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 600px) {
+font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1101px) {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
 `;
 
 const LoginLink = styled.div`

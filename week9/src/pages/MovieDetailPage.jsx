@@ -36,6 +36,21 @@ const Container = styled.div`
   padding-top: 20vh;
   padding-bottom: 21vh;
   z-index: 1;
+
+  @media screen and (max-width: 600px) {
+    width: 75vw;
+    padding: 60vw;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    width: 60vw;
+    padding: 5vw;
+  }
+
+  @media screen and (min-width: 1101px) {
+    width: 40vw;
+    padding: 10vw;
+  }
 `;
 
 const Content = styled.div`
@@ -44,6 +59,20 @@ const Content = styled.div`
   border-radius: 10px;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    width: 150vw;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    width: 60vw;
+    padding: 2vh;
+  }
+
+  @media screen and (min-width: 1101px) {
+    width: 40vw;
+    padding: 1vh;
+  }
 `;
 
 const Poster = styled.img`
@@ -76,6 +105,22 @@ const ReleaseDate = styled.div`
 const Synopsis = styled.p`
   font-size: 18px;
   color: white;
+
+    @media screen and (max-width: 600px) {
+    width: 100vw;
+    padding: 2vh;
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    width: 40vw;
+    padding: 2vh;
+  }
+
+  @media screen and (min-width: 1101px) {
+    width: 40vw;
+    padding: 1vh;
+  }
 `;
 
 const LoaderContainer = styled.div`

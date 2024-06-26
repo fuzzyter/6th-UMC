@@ -11,6 +11,24 @@ const SearchBarContainer = styled.div`
   color: white;
   background-color: #212348;
   padding-bottom: 150px;
+
+  @media screen and (max-width: 600px) {
+    padding: 310px;
+    font-size: 16px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    padding: 15px;
+    font-size: 18px;
+    padding-bottom: 120px;
+  }
+
+  @media screen and (min-width: 1101px) {
+    padding: 20px;
+    font-size: 20px;
+    padding-bottom: 150px;
+  }
 `;
 
 const Title = styled.div`
@@ -18,6 +36,24 @@ const Title = styled.div`
   font-weight: 700;
   margin-top: 30px;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: 1101px) {
+    font-size: 42px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
 `;
 
 const SearchInput = styled.input`
@@ -27,6 +63,21 @@ const SearchInput = styled.input`
   border: none;
   border-radius: 50px;
   outline: none;
+
+  @media screen and (max-width: 600px) {
+    width: 80vw;
+    padding: 2vh;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    width: 60vw;
+    padding: 1.5vh;
+  }
+
+  @media screen and (min-width: 1101px) {
+    width: 40vw;
+    padding: 1.5vh;
+  }
 `;
 
 const SearchButton = styled.button`
@@ -51,6 +102,21 @@ const ResultsContainer = styled.div`
   background-color: #171B39;
   border-radius: 10px;
   padding: 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 90vw;
+    padding: 2vh;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    width: 90vw;
+    padding: 2vh;
+  }
+
+  @media screen and (min-width: 1101px) {
+    width: 90vw;
+    padding: 2vh;
+  }
   
   &::-webkit-scrollbar {
     width: 8px;

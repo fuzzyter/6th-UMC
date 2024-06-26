@@ -7,6 +7,11 @@ const NavbarContainer = styled.nav`
   justify-content: space-between;
   background-color: #2c2f33;
   padding: 10px 20px;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+
 `;
 
 const Logo = styled.h1`

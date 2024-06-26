@@ -10,6 +10,21 @@ const BannerContainer = styled.div`
   padding: 50px 20px;
   height: 20%;
   font-size: 20px;
+
+    @media screen and (max-width: 600px) {
+    padding: 30px 10px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    padding: 40px 15px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1101px) {
+    padding: 50px 20px;
+    font-size: 20px;
+  }
 `;
 
 const WelcomeText = styled.h2`

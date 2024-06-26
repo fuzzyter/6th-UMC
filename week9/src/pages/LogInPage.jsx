@@ -10,6 +10,22 @@ const Container = styled.div`
   justify-content: center;
   height: 100vh;
   background-color: #212348;
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+    padding: 1vw;
+    padding-bottom: 30vh;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    padding: 2vw;
+    padding-bottom: 20vh;
+  }
+
+  @media screen and (min-width: 1101px) {
+    padding: 2vw;
+    padding-bottom: 20vh;
+  }
 `;
 
 const Form = styled.form`
@@ -19,6 +35,18 @@ const Form = styled.form`
   width: 600px;
   padding: 20px;
   border-radius: 10px;
+
+  @media screen and (max-width: 600px) {
+    width: 75vw;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    width: 50vw;
+  }
+
+  @media screen and (min-width: 1101px) {
+    width: 40vw;
+  }
 `;
 
 const Input = styled.input`
@@ -29,6 +57,21 @@ const Input = styled.input`
   border: none;
   outline: none;
   font-size: 16px;
+
+  @media screen and (max-width: 600px) {
+    width: 75vw;
+    padding: 2vh;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    width: 60vw;
+    padding: 2vh;
+  }
+
+  @media screen and (min-width: 1101px) {
+    width: 40vw;
+    padding: 1.5vh;
+  }
 `;
 
 const ErrorMessage = styled.div`
@@ -52,6 +95,21 @@ const SubmitButton = styled.button`
   &:disabled {
     background-color: white;
     cursor: not-allowed;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 40vw;
+    padding: 2vh;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1100px) {
+    width: 40vw;
+    padding: 1.5vh;
+  }
+
+  @media screen and (min-width: 1101px) {
+    width: 30vw;
+    padding: 1.5vh;
   }
 `;
 
