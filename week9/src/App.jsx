@@ -36,4 +36,34 @@ function App() {
   );
 }
 
+const isSidebar = ({ isOpen, toggleSidebar }) => {
+  return (
+    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+      <ul className="nav-links">
+        <li onClick={toggleSidebar}><a href="#home">Home</a></li>
+        <li onClick={toggleSidebar}><a href="#movies">Movies</a></li>
+        <li onClick={toggleSidebar}><a href="#about">About</a></li>
+        <li onClick={toggleSidebar}><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  );
+};
+
+const isApp = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+  return (
+    <div>
+      <Navbar toggleSidebar={toggleSidebar} />
+      <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+      <main>
+      </main>
+    </div>
+  );
+}
+
 export default App;
