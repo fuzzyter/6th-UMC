@@ -1,5 +1,3 @@
-// pages/MainPage.js
-
 import Banner from '../components/Banner';
 import SearchBar from '../components/search/SearchBar';
 import styled from 'styled-components';

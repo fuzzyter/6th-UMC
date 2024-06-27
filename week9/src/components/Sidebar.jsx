@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const MenuIcon = styled.div`
-  display: none;
+  display: block; 
   font-size: 30px;
   cursor: pointer;
   position: absolute;
   top: 15px;
   left: 15px;
 
-  
+  @media (min-width: 800px) {
+    display: block;
+  }
   }
 `;
 
@@ -53,10 +55,10 @@ const Sidebar = () => {
     <>
       <MenuIcon onClick={toggleSidebar}>☰</MenuIcon>
       <SidebarContainer isOpen={isOpen}>
-        <SidebarLink to="/popular">Popular</SidebarLink>
-        <SidebarLink to="/nowplaying">Now Playing</SidebarLink>
-        <SidebarLink to="/toprated">Top Rated</SidebarLink>
-        <SidebarLink to="/upcoming">Upcoming</SidebarLink>
+        <SidebarLink href="/popular">Popular</SidebarLink>
+        <SidebarLink href="/nowplaying">Now Playing</SidebarLink>
+        <SidebarLink href="/toprated">Top Rated</SidebarLink>
+        <SidebarLink href="/upcoming">Upcoming</SidebarLink>
       </SidebarContainer>
     </>
   );
