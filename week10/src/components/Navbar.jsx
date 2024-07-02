@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import ShareKakao from "../api/ShareKakao";
 
 const NavbarContainer = styled.nav`
   display: flex;
@@ -46,7 +47,7 @@ const Navbar = () => {
 
   return (
     <NavbarContainer>
-      <Logo><NavLink to="/" style={{ color: 'white' }}>UMC Movie</NavLink></Logo>
+      <Logo><NavLink to="/" style={{ color: 'white' }}>UMC Movie</NavLink><ShareKakao/></Logo>
       <NavItems>
         <NavLink to="/popular" style={({ isActive }) => isActive ? { color: 'yellow' } : null}>Popular</NavLink>
         <NavLink to="/nowplaying" style={({ isActive }) => isActive ? { color: 'yellow' } : null}>Now Playing</NavLink>
