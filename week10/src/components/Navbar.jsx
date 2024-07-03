@@ -1,6 +1,7 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import ShareKakao from "../api/ShareKakao";
+import ShareKakao from "../api/ShareKakao.jsx";
+import getRedirectURI from '../RedirectURI';
 
 const NavbarContainer = styled.nav`
   display: flex;
@@ -37,13 +38,28 @@ const NavItems = styled.div`
 `;
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const token = localStorage.getItem('token');
 
+  /*
   const handleLogout = () => {
     localStorage.removeItem('token');
     navigate('/');
-  };
+  };*/
+
+  const handleLogout = async () => {
+    const clientId = import.meta.env.VITE_REST_API_ACCESS;
+    const logoutRedirectURI = getRedirectURI();
+    const kakaoLogoutURL = `https://kauth.kakao.com/oauth/logout?client_id=${clientId}&logout_redirect_uri=${logoutRedirectURI}`;
+
+    try { 
+        localStorage.removeItem('token');
+        localStorage.removeItem('username');
+        setIsAuthenticated(false);
+        window.location.href = kakaoLogoutURL;
+    } catch (error) {
+        console.error('Logout Error: ', error);
+    }
+};
 
   return (
     <NavbarContainer>

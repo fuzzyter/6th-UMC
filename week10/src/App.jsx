@@ -9,8 +9,8 @@ import TopRatedPage from './pages/TopRatedPage';
 import UpComingPage from './pages/UpComingPage';
 import MovieDetailPage from './pages/MovieDetailPage';
 import NotFound from './pages/NotFoundPage';
-import SignUp from './pages/SignUpPage';
-import LogIn from './pages/LogInPage'
+import SignUpPage from './pages/SignUpPage';
+import LogInPage from './pages/LogInPage'
 import './App.css';
 
 function App() {
@@ -27,8 +27,8 @@ function App() {
           <Route path="/upcoming" element={<UpComingPage />} />
           <Route path="/movie/:movieId" element={<MovieDetailPage />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<LogIn />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/login" element={<LogInPage />} />
         </Routes>
         <Footer />
       </div>

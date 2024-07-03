@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -188,6 +189,7 @@ const LogInPage = () => {
         {errors.password && <ErrorMessage>{errors.password}</ErrorMessage>}
         <SubmitButton type="submit" disabled={!isValid}>로그인</SubmitButton>
       </Form>
+
     </Container>
   );
 };
