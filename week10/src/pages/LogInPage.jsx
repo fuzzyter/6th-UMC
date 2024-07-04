@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import LoginKakao from '../api/LoginKakao';
 
 
 const Container = styled.div`
@@ -189,6 +190,7 @@ const LogInPage = () => {
         {errors.password && <ErrorMessage>{errors.password}</ErrorMessage>}
         <SubmitButton type="submit" disabled={!isValid}>로그인</SubmitButton>
       </Form>
+      <LoginKakao/>
 
     </Container>
   );
